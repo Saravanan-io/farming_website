@@ -1,0 +1,144 @@
+.join-page {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #e8f5e8, #f8fdf3);
+  min-height: 100vh;
+}
+
+.join-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.join-hero h1 {
+  font-size: 3rem;
+  color: #2d5016;
+  margin-bottom: 1rem;
+}
+
+.join-hero p {
+  font-size: 1.2rem;
+  color: #4a7c1f;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.join-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.join-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.option-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+}
+
+.option-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.option-card h3 {
+  color: #2d5016;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.option-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.option-card li {
+  padding: 0.5rem 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.join-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.join-form h2 {
+  color: #2d5016;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2d5016;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e8f5e8;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4a7c1f;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media (max-width: 968px) {
+  .join-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .join-form {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .join-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .join-options {
+    gap: 1.5rem;
+  }
+  
+  .option-card {
+    padding: 1.5rem;
+  }
+}
